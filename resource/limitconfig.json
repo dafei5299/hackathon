@@ -1,0 +1,93 @@
+[
+  {
+    "uri": "/update/updatePrice.php",
+    "conf": [
+      {
+        "times": 3,
+        "section": 100,
+        "type": "IPLIMIT",
+        "filter": [
+          "aaa=111",
+          "bbb=222",
+          "zzz=333",
+          "ggg=444"
+        ]
+      },
+      {
+        "times": 3,
+        "section": 10,
+        "type": "IPLIMIT",
+        "filter": [
+          "aaa=111",
+          "bbb=222"
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "/index.php/order/orderList/",
+    "conf": [
+      {
+        "type" : "IPLIMIT",
+        "times": 2,
+        "section": 12
+      }
+    ]
+  },
+  {
+    "uri": "/index.php/merchant/merchantDetail/",
+    "conf": [
+      {
+        "type" : "TIMESLIMIT",
+        "times": 5,
+        "section": 12,
+        "filter": [
+          "merchantid=10074"
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "/index.php/index/main/",
+    "conf" : [
+      {
+        "type" : "VERIFYCODE",
+        "times": 2,
+        "section": 1
+      }
+    ]
+  },
+  {
+    "uri": "/index.php/index/manager/",
+    "conf" : [
+      {
+        "type" : "ACCESSTOKEN",
+        "times": 5,
+        "section": 1
+      }
+    ]
+  },
+  {
+    "uri": "/verifycode.html",
+    "conf" : [
+      {
+        "type" : "TIMESLIMIT",
+        "times": 3,
+        "section": 1
+      }
+    ]
+  },
+  {
+    "uri": "/index.php/merchant/changeMerchantStatusOnLine/",
+    "conf" : [
+      {
+        "type" : "IPLIMIT",
+        "times": 5,
+        "section": 1,
+        "filter": [
+          "merchantid=10074"
+        ]
+      }
+    ]
+  }
+]

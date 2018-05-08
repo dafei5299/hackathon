@@ -1,0 +1,11 @@
+{
+    "switch": true,
+    "type" : "SERVICE",
+    "domain": "test.com",
+    "expires": 3600,
+    "selfcookiename" : "hackathon",
+    "usercookie" :
+    [
+        "menpiaoagent"
+    ]
+}
